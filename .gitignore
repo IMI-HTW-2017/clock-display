@@ -1,0 +1,38 @@
+# Created by https://www.gitignore.io/api/macos,bluej
+
+### bluej ###
+# BlueJ: A Java IDE for programming beginners. http://bluej.org
+
+# Editor preferences for a class etc, see http://lists.bluej.org/pipermail/bluej-discuss/2003-May/002351.html
+*.ctxt
+
+# Duplicate of project file, see http://www.hs-owl.de/fb5/labor/it/de/if1/vl/IF1JavaOhneBluej.pdf, page 4
+bluej.pkh
+### macOS ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# End of https://www.gitignore.io/api/macos,bluej
