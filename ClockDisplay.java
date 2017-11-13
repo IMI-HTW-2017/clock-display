@@ -27,6 +27,7 @@ public class ClockDisplay
     private boolean isAlarmActive;
     
     private ClockGUI gui;
+    private AmericanClockGUI americanGui;
     
     /**
      * Constructor for ClockDisplay objects. This constructor 
@@ -50,6 +51,7 @@ public class ClockDisplay
         minutes = new NumberDisplay(60);
         seconds = new NumberDisplay(60);
         gui = new ClockGUI();
+        americanGui = new AmericanClockGUI();
         setTime(hour, minute, second);
         new Timer().schedule(new Clock(this), (System.currentTimeMillis() % 1000), 1000);
     }
@@ -163,5 +165,7 @@ public class ClockDisplay
         displayString = hours.getDisplayValue() + ":" + 
                         minutes.getDisplayValue() + ":" + seconds.getDisplayValue();
         gui.update(displayString);
+        
+        americanGui.update(getAmericanTime());
     }
 }
